@@ -12,6 +12,7 @@ Heap* create_heap(){
     h->head->data_array = calloc(1, sizeof(int));
     if (h->head->data_array == NULL) exit(-1);
     h->head->next_level = NULL;
+    h->head->prev_level = NULL;
     
     //sets heap data
     h->insert_level = h->head;
